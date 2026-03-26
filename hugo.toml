@@ -2,3 +2,35 @@ baseURL = 'https://example.org/'
 locale = 'en-us'
 title = 'My New Hugo Project'
 theme = "PaperMod" 
+[params]
+    defaultTheme = "dark" # 默认开启暗黑模式
+[params]
+    env = "production"
+    title = "Forest's Space"
+    description = "记录生活、摄影与随笔"
+    keywords = ["Blog", "Portfolio", "PaperMod"]
+    author = "Forest Chen"
+    
+    # 开启首页名片模式
+    [params.profileMode]
+        enabled = true
+        title = "你好，我是 Forest 👋"
+        subtitle = "这里是我的个人随笔空间。喜欢 F1、足球和记录生活。"
+        displayFullDisp = true
+        imageUrl = "https://your-image-url.com/avatar.jpg" # 以后可以换成你的头像地址
+        imageTitle = "Forest"
+        imageWidth = 120
+        imageHeight = 120
+
+        [[params.profileMode.buttons]]
+            name = "📸 随笔/照片"
+            url = "posts"
+        [[params.profileMode.buttons]]
+            name = "🔍 搜索"
+            url = "search"
+        [[params.socialIcons]]
+            name = "github"
+            url = "https://github.com/wannabestrong"
+    [params.cover]
+        responsiveImages = true # 自动适配手机/电脑尺寸
+        linkFullImages = true   # 点击图片可以看大图
